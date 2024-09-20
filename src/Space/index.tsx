@@ -53,7 +53,7 @@ const Space: FC<SpaceProps> = props => {
         return <>
             <div className="space-item" key={key}>{child}</div>
             {/* split 分隔符 */}
-            {i < childNodes.length && split && (
+            {i < childNodes.length - 1 && childNodes.length > 1 && split && (
                 <span className={`${className}-split`} style={style}>{split}</span>
             )}
         </>
